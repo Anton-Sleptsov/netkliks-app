@@ -1,7 +1,9 @@
-
+:host {
+  width: calc((100% - (30px * 2)) / 3);
+}
 
 .content-cards__item {
-  width: calc((100% - (30px * 2)) / 3);
+  width: 100%;
   text-decoration: none;
 }
 
@@ -60,13 +62,17 @@
 }
 
 @media (max-width: 991px) {
-  .content-cards__item {
+  :host {
     width: calc((100% - 30px) / 2);
+  }
+  
+  .content-cards__item {
+    width: 100%;
   }
 }
 
 @media (max-width: 480px) {
-  .content-cards__item {
+  :host {
     width: 100%;
   }
 }
